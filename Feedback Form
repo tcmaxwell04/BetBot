@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BetBot Form</title>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">BetBot Survey</h1>
+    <p id="description">Fill out the info below</p>
+  <form id="survey-form">
+    <fieldset id="outer">
+      <fieldset>
+        <label id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email<input type="email" id="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Age<input type="number" id="number" min="21" max="120" placeholder="Enter your age" required /></label>
+      </fieldset>
+      <fieldset>
+        <label>
+			  </label>
+        <label>How did you find us?
+          <select name="referrer" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Twitter/Instagram</option>
+            <option value="2">YouTube</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+      <fieldset>
+        <label id="title">What is your favorite BetBot feature?</label>
+        <label><input type="radio" name="reason" class="inline" value="submit"/> Predictions</label>
+        <label><input type="radio" name="reason" class="inline" value="submit"/> Data Trends</label>
+        <label>
+          <input type="radio" name="reason" class="inline" value="submit"/> MMA Stats 
+			  </label>
+      </fieldset>
+      <fieldset>
+        <label>Which sports do you bet on?</label>
+         <label><input type= "checkbox" value="select" class="inline"/> Football</label>
+         <label><input type="checkbox" value="select" class="inline"/> Baseball</label>
+         <label><input type="checkbox" value="select" class="inline"/> Basketball</label>
+         <label><input type="checkbox" class="inline" value="select"/> MMA</label>
+         <label><input type="checkbox" value="select" class="inline"/> Other</label>
+    </fieldset>
+    <fieldset>
+          <textarea name="improvements" rows="8" cols="30" placeholder="Suggestions to improve the site..."></textarea>
+			  </label>
+      </fieldset>
+  </fieldset>
+  <input type="submit" value="Submit" id="submit"/>
+  </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family: Tahoma;
+	font-size: 16px;
+}
